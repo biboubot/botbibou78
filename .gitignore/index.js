@@ -4,6 +4,15 @@ const fs = require('fs')
 var prefix = ".";
  
 client.login('NTU0Mjc2NDIyNzcyODUwNzAw.D2gWLA.vYnKQYERdTA0ycUcZgLlwoVjMCs');
+
+bot.on('message', message => {
+    if (message.content === prefix + "help"){
+        message.channel.sendMessage("Voici les commandes: \n .kick @mentionner raison \n .ban @mentionner raison \n .warn @mentionner raison \n .infractions @mentionner raison \n .8ball \n .clear un nombre entre 1 et 100 \n .mute @mentionner raison");
+    }
+})
+
+    if (message.content === prefix +"Fondateur de bot")
+        message.channel.sendMessage("Mon créateur et le magnifique savasava !")
  
 client.on('message', message =>{
     if(message.content === "tu fais quoi?"){
@@ -292,6 +301,14 @@ client.on('message', message =>{
             message.reply('savasava');
             console.log('répond à oui et toi');
     }})
+
+
+    
+
+
+
+
+
 
 
 
